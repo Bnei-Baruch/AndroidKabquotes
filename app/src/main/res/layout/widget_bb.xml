@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:id="@+id/iconBitmap"
+            android:scaleType="fitStart"
+            android:src="@drawable/baal_sulam_small"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+
+            <TextView
+                android:id="@+id/tvQuoteText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:text="כוונת הבורא ית&apos; על הבריאה מעת שנבראה, הוא להודיע את אלוקותו לזולתו. כי דבר הודעת אלוקותו, מגיע לנברא במידת שפעו הנעים, ההולך ומתרבה אליו עד השיעור הרצוי. שבזאת מתרוממים השפלים בהכרה אמיתית, להיות למרכבה אליו ית&apos; ולדבקה בו, עד שמגיעים לשלמותם הסופית: עין לא ראתה אלוקים זולתך."
+                android:gravity="right|top"
+                android:singleLine="false"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textAlignment="gravity">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:background="#ff3882a3">
+
+        <TextView
+            android:id="@+id/tvQuoteSource"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff3882a3"
+            android:text="בעל הסולם, מתן תורה, ו"
+            android:textColor="#ffffffff"
+            android:textSize="10sp"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:layout_weight="1">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageShare"
+            android:layout_weight="7"
+            android:src="@android:drawable/ic_menu_share"
+            android:layout_gravity="right"
+            android:padding="2dp"
+            android:background="#ff143748" />
+    </LinearLayout>
+</LinearLayout>

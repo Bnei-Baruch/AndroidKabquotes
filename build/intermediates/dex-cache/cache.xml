@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/classes-bd58b945aada6ef0f60b0f74842e6cf3d29580b0.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/libs/Parse-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5811138d4e6cb9d45030e133ef1a61b935154c3a">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/Parse-1.9.0-4ed49d136961167c33731661f2e3e2ea4ad9a46a.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-cdf1fd5c1a2f70e16d40391d1a97ba9eec3a0988.jar" />
+    </item>
+    <item
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-5d6852103731d9bd3265f3be5e5c0ce76bf9d759.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/libs/realm-0.80.1-GINGERBREAD-SUPPORT.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d60045833def6230770aba079553457669dd8fef">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/realm-0.80.1-GINGERBREAD-SUPPORT-a858a1f70178b6c5288f3c93531ea6a44a612d66.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/classes-275dd56fbf10e9b25df62f95d1d2ca546008db14.jar" />
+    </item>
+    <item
+        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-82da087c35b2609b0694164b2c1536b9cb845236.jar" />
+    </item>
+
+</items>
