@@ -8,15 +8,29 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.RemoteViews;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.MalformedInputException;
+
+
+import com.parse.ParseFile;
 
 
 import info.kab.android.widget.quote.R;
 import info.kab.quote.LocalDB.QuoteManager;
+import info.kab.quote.ParseLoader.ParseManager;
 
 public class UpdateWidgetService extends Service {
 	public static final String LOG = "my**";
@@ -59,7 +73,17 @@ public class UpdateWidgetService extends Service {
 
             remoteViews.setTextViewText(R.id.tvQuoteText, quoteText);
             remoteViews.setTextViewText(R.id.tvQuoteSource, quoteSource);
-            remoteViews.setImageViewUri(R.id.iconBitmap, Uri.parse(quoteUri));
+
+            Bitmap mIcon_val = null;
+
+            remoteViews.setImageViewBitmap(R.id.iconBitmap,null);
+            DownloadImageTask down =  new DownloadImageTask(mIcon_val,remoteViews,R.id.iconBitmap,widgetId);
+            down.execute(quoteUri);
+
+
+            //remoteViews.setImageViewUri(R.id.iconBitmap,  Uri.parse(quoteUri));
+
+
 
 			// Register an onClickListener
 			Intent clickIntent = new Intent(this.getApplicationContext(), MyWidgetProvider.class);
@@ -139,4 +163,41 @@ public class UpdateWidgetService extends Service {
 	public IBinder onBind(Intent intent) {
 		return null;
 	}
+
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+        Bitmap bmImage;
+        RemoteViews rv;
+        int id;
+        int widgetid;
+
+        public DownloadImageTask(Bitmap bmImage,RemoteViews review,int id,int wid) {
+            this.bmImage = bmImage;
+            this.rv = review;
+            this.id = id;
+            this.widgetid = wid;
+        }
+
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap mIcon11 = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mIcon11 = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            return mIcon11;
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            bmImage = result;
+            rv.setImageViewBitmap(id,null);
+            rv.setImageViewBitmap(id,result);
+            AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(getApplicationContext());
+            appWidgetManager.partiallyUpdateAppWidget(widgetid, rv);
+        }
+    }
+
+
 }

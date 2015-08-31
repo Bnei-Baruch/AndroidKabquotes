@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="realm-0.80.1-GINGERBREAD-SUPPORT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/realm-0.80.1-GINGERBREAD-SUPPORT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

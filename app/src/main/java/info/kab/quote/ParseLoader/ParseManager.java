@@ -153,18 +153,19 @@ public class ParseManager {
 
                                  ParseFile imageP = parseObject.getParseFile(IMAGE_PARSE);
 
-                                 try {
-                                     URI_PATH = convertToBitmap(imageP);
-                                 } catch (ParseException e1) {
-                                     e1.printStackTrace();
-                                 }
+//                                 try {
+//                                     URI_PATH = convertToBitmap(imageP);
+//                                 } catch (ParseException e1) {
+//                                     e1.printStackTrace();
+//                                 }
+
 
                                  Log.d(LOG_TAG, "URI_QUOTE / " + URI_PATH);
 
                                  hashMap = new HashMap<>();
                                  hashMap.put(QuoteManager.TEXT_QUOTE, textP);
                                  hashMap.put(QuoteManager.SOURCE_QUOTE, sourceP);
-                                 hashMap.put(QuoteManager.URI_QUOTE, URI_PATH);
+                                 hashMap.put(QuoteManager.URI_QUOTE, imageP.getUrl());
                                  hashMap.put(QuoteManager.LINK_QUOTE, linkP);
 
                                  Log.d(LOG_TAG, "EXT_QUOTE / " + textP);
@@ -190,7 +191,7 @@ public class ParseManager {
     }
 
 
-    private String convertToBitmap(ParseFile image) throws ParseException {
+    public String convertToBitmap(ParseFile image) throws ParseException {
 
 
         if (image != null) {

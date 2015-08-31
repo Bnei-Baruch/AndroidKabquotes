@@ -1,0 +1,96 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:6:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		ADDED from AndroidManifest.xml:5:5
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	android:installLocation
+		ADDED from AndroidManifest.xml:4:5
+uses-sdk
+ADDED from AndroidManifest.xml:8:5
+MERGED from com.android.support:appcompat-v7:22.0.0:20:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:8:15
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:16:9
+application
+ADDED from AndroidManifest.xml:19:5
+MERGED from com.android.support:appcompat-v7:22.0.0:22:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+	android:label
+		ADDED from AndroidManifest.xml:21:9
+	android:icon
+		ADDED from AndroidManifest.xml:20:9
+receiver#info.kab.quote.Widget.MyWidgetProvider
+ADDED from AndroidManifest.xml:22:9
+	android:label
+		ADDED from AndroidManifest.xml:25:13
+	android:icon
+		ADDED from AndroidManifest.xml:24:13
+	android:name
+		ADDED from AndroidManifest.xml:23:13
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:26:13
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:27:17
+	android:name
+		ADDED from AndroidManifest.xml:27:25
+meta-data#android.appwidget.provider
+ADDED from AndroidManifest.xml:31:13
+	android:resource
+		ADDED from AndroidManifest.xml:33:17
+	android:name
+		ADDED from AndroidManifest.xml:32:17
+activity#info.kab.quote.Widget.ConfigActivity
+ADDED from AndroidManifest.xml:36:9
+	android:name
+		ADDED from AndroidManifest.xml:36:19
+intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from AndroidManifest.xml:37:13
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from AndroidManifest.xml:38:17
+	android:name
+		ADDED from AndroidManifest.xml:38:25
+activity#info.kab.quote.Widget.LinkActivity
+ADDED from AndroidManifest.xml:41:9
+	android:label
+		ADDED from AndroidManifest.xml:43:13
+	android:name
+		ADDED from AndroidManifest.xml:42:13
+service#info.kab.quote.Widget.UpdateWidgetService
+ADDED from AndroidManifest.xml:45:9
+	android:name
+		ADDED from AndroidManifest.xml:45:18

@@ -21,8 +21,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
     @Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 
-        db = ParseManager.getInstance(context);
-        db.updateFromParse();
+
 
 		Log.i(LOG, "onUpdate method called");
 		// Get all ids
@@ -51,7 +50,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
                 Log.i(LOG, "Network " + ni.getTypeName() + " connected");
 
 
-                parseDownload(context);
+               // parseDownload(context);
 
             } else if (intent.getBooleanExtra(ConnectivityManager.EXTRA_NO_CONNECTIVITY, Boolean.FALSE)) {
                 Log.d(LOG, "There's no network connectivity");
@@ -64,8 +63,11 @@ public class MyWidgetProvider extends AppWidgetProvider {
     public void onEnabled(Context context) {
         super.onEnabled(context);
 
+        db = ParseManager.getInstance(context);
+        db.updateFromParse();
+
         QuoteManager.greatInstance(context);
-        parseDownload(context);
+       // parseDownload(context);
 
 
         Log.i(LOG, "onEnabled ok");

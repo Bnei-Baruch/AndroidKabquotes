@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/classes-bd58b945aada6ef0f60b0f74842e6cf3d29580b0.jar" />
-    </item>
-    <item
-        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/libs/Parse-1.9.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="5811138d4e6cb9d45030e133ef1a61b935154c3a">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/Parse-1.9.0-4ed49d136961167c33731661f2e3e2ea4ad9a46a.jar" />
-    </item>
-    <item
-        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-cdf1fd5c1a2f70e16d40391d1a97ba9eec3a0988.jar" />
-    </item>
-    <item
-        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-5d6852103731d9bd3265f3be5e5c0ce76bf9d759.jar" />
-    </item>
-    <item
-        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/libs/realm-0.80.1-GINGERBREAD-SUPPORT.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d60045833def6230770aba079553457669dd8fef">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/realm-0.80.1-GINGERBREAD-SUPPORT-a858a1f70178b6c5288f3c93531ea6a44a612d66.jar" />
-    </item>
-    <item
-        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/classes-275dd56fbf10e9b25df62f95d1d2ca546008db14.jar" />
-    </item>
-    <item
-        jar="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/Users/admin/Dropbox/bb_widget/WidgetQuote/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-82da087c35b2609b0694164b2c1536b9cb845236.jar" />
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-956cf43128232e89f4bc33a0fa4175f0884b908c.jar" />
+    </item>
+    <item
+        jar="/Users/igal/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-66ee41b61b73bc7a5519f5ce7c3d8f5359d5ece8.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/Parse-1.9.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fe739334780fe321141e62720822c2d456061899">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/Parse-1.9.2-917962969aca374fc5f4947d8e3f682a56a4d36f.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/classes-21b2e80fb1bb206d06e7f4ebb7706fe7cdf3d5b9.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/classes-ad8d4512d9de5b0005fae75724e565e3c37bd87c.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/realm-0.80.1-GINGERBREAD-SUPPORT.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d60045833def6230770aba079553457669dd8fef">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/realm-0.80.1-GINGERBREAD-SUPPORT-90fa9e006516712689f05a2d364a1b27059d6460.jar" />
+    </item>
+    <item
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-e73a8de5fc7d55ebd975beff4af99dac9e0cb2f4.jar" />
     </item>
 
 </items>
