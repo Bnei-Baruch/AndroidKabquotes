@@ -2,53 +2,157 @@
 <items version="2" >
 
     <item
-        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-956cf43128232e89f4bc33a0fa4175f0884b908c.jar" />
-    </item>
-    <item
-        jar="/Users/igal/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-66ee41b61b73bc7a5519f5ce7c3d8f5359d5ece8.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/Parse-1.9.2.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fe739334780fe321141e62720822c2d456061899">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/Parse-1.9.2-917962969aca374fc5f4947d8e3f682a56a4d36f.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/classes-21b2e80fb1bb206d06e7f4ebb7706fe7cdf3d5b9.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/classes-ad8d4512d9de5b0005fae75724e565e3c37bd87c.jar" />
-    </item>
-    <item
-        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/realm-0.80.1-GINGERBREAD-SUPPORT.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d60045833def6230770aba079553457669dd8fef">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/realm-0.80.1-GINGERBREAD-SUPPORT-90fa9e006516712689f05a2d364a1b27059d6460.jar" />
-    </item>
-    <item
+        is-multidex="true"
         jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/bolts-android-1.2.0.jar"
-        jumboMode="false"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
         sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-e73a8de5fc7d55ebd975beff4af99dac9e0cb2f4.jar" />
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/2/bolts-android-1.2.0_e73a8de5fc7d55ebd975beff4af99dac9e0cb2f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="ce6e6e59212db0893fc36e5b579cf319a84aade8">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.0_19a1337bafe7d4a10551054010896c5dd18620cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="3a05b3852a6aec21ea0a6ea4d284ee69c04c55c4">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.0_68af7a291ad292cd9ecf7f0389bb08caabe459cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="75dbc3537bc912d077b3db2f5ac72d5b43644b2c">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.0_f4d5afe6e0569582fd4cc76baafe860580d4bfc3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a61005619e43f203768ff3f224137def6f029e50">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.0_ee1c20d6f20b748310d80ba0fd1ffd8f7caede6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-21.0.0_51e2eb7da9805af39d428fbe5804a731ff5bd28c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="533bc00e0a267d0a18c336ff8ea56d22e24e0b89">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9251de59f041f19323ce1c5e4899e481cafc03f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="13796f4a9bd6dbe5842c5f827c36189dca3f3291">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8e2a37cd20cd1388285be171f8c20bf16ce62fe4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_a2153be1726722c1019f48fe0fd339be9854adc1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/Parse-1.9.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="fe739334780fe321141e62720822c2d456061899">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/2/Parse-1.9.2_917962969aca374fc5f4947d8e3f682a56a4d36f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="985be85104f6d0c5c5e51e7b7e60d8883a98ac64">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.0_e87787a00ed28ee02e6e0f2f876be239327b0d36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2b410ae1fda134f470276365f4b7f846269e0d23">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.0_7126693734630171315e19f1c5a22421e002d989/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/android-sdks/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_ae2d2f8b4931d7fde04ab51a62e30335d49ccc2c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/libs/realm-0.80.1-GINGERBREAD-SUPPORT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d60045833def6230770aba079553457669dd8fef">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/2/realm-0.80.1-GINGERBREAD-SUPPORT_90fa9e006516712689f05a2d364a1b27059d6460/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c7ed3fd9d5a9687980dac6c504abd91ad3dfa238">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.0_70a192239eb45e49a26ac4a280f40d3eb12d4660/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="41e39c7ee84e63ae18df6c6ccb96d196996add4c">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.0_548663a2998fc1fbde2c88483d89e98fd03e6cb3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_cec1cb5f4bddb10f2664eadc5f0ca44621baae76/classes.dex" />
     </item>
 
 </items>

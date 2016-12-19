@@ -22,6 +22,7 @@ import info.kab.quote.LocalDB.QuoteManager;
 public class ConfigActivity extends Activity  {
 
     public final static String WIDGET_PREF = "widget_pref";
+    public final static String CURRENT_ID = "current_id";
     public final static String WIDGET_COUNT = "widget_count_";
 
 

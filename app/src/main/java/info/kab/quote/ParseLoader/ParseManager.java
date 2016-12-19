@@ -10,6 +10,13 @@ import android.os.Environment;
 import android.text.format.Time;
 import android.util.Log;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.Parse;
@@ -18,24 +25,32 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import info.kab.quote.LocalDB.QuoteManager;
+import info.kab.quote.LocalDB.QuoteRecords;
 import info.kab.quote.Widget.ConfigActivity;
+
+import static java.lang.System.in;
 
 /**
  * Created by admin on 4/4/15.
  */
 public class ParseManager {
 
-    static final String TEXT_PARSE = "text";
+    static final String TEXT_PARSE = "Quote";
     static final String IMAGE_PARSE = "image";
-    static final String SOURCE_PARSE = "source";
+    static final String SOURCE_PARSE = "Source";
     static final String LINK_PARSE = "link";
     static final String LOG_TAG = "path**";
     static final String FIRST_OBJECT = "first_object";
@@ -46,6 +61,7 @@ public class ParseManager {
 
     final String DIR_SD = "App_Widget";
     String URI_PATH = "android.resource://com.example.gleb.widget_01/drawable/baal_sulam_small";
+    public DatabaseReference mDatabase;
 
 
     static ParseManager parseManager;
@@ -71,8 +87,8 @@ public class ParseManager {
 
     public static void connectParse() {
 
-        Parse.enableLocalDatastore(context);
-        Parse.initialize(context, "j35nWopJYNDOpbvOUbdfOqevXQ0vYpyyLryGMlDO", "5d6aIFqz8wW9wLlfQVgO4aTVstw5x9AuSr3gFsrN");
+        //Parse.enableLocalDatastore(context);
+       // Parse.initialize(context, "j35nWopJYNDOpbvOUbdfOqevXQ0vYpyyLryGMlDO", "5d6aIFqz8wW9wLlfQVgO4aTVstw5x9AuSr3gFsrN");
 
         firstObject = "====000====";
         sp =  context.getSharedPreferences(ConfigActivity.WIDGET_PREF, Context.MODE_PRIVATE);
@@ -80,41 +96,63 @@ public class ParseManager {
         editor.putString(FIRST_OBJECT, firstObject);
         editor.commit();
 
+
+
+        parseManager.mDatabase = FirebaseDatabase.getInstance().getReference();
+        parseManager.mDatabase.child("Root/QuoteRow/");
+
+
+//        parseManager.mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+//                                                 @Override
+//                                                 public void onDataChange(DataSnapshot snapshot) {
+//                                                     JSONObject quote = (JSONObject) snapshot.getValue();
+//
+//                                                 }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });
+
+
+
+
     }
 
 
     public boolean checkUpdate() {
 
-        boolean check = false;
+        boolean check = true;
 
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Quotes");
-        try {
-
-            int lastNumber = query.find().size()-1;
-            firstObject = query.find().get(lastNumber).getString(TEXT_PARSE);
-
-
-            Log.i("id**", "ID dowloud = " + firstObject);
-            Log.i("id**", "ID db = " + sp.getString(FIRST_OBJECT, ""));
-
-            if(sp.getString(FIRST_OBJECT, "").equals(firstObject)){
-                Log.i("id**", "check = false");
-                check = false;
-            }
-            else {
-
-                check = true;
-                Log.i("id**", "check = true");
-            }
-
-            editor = sp.edit();
-            editor.putString(FIRST_OBJECT, firstObject);
-            editor.commit();
-
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+//        ParseQuery<ParseObject> query = ParseQuery.getQuery("Quotes");
+//        try {
+//
+//            int lastNumber = query.find().size()-1;
+//            firstObject = query.find().get(lastNumber).getString(TEXT_PARSE);
+//
+//
+//            Log.i("id**", "ID dowloud = " + firstObject);
+//            Log.i("id**", "ID db = " + sp.getString(FIRST_OBJECT, ""));
+//
+//            if(sp.getString(FIRST_OBJECT, "").equals(firstObject)){
+//                Log.i("id**", "check = false");
+//                check = false;
+//            }
+//            else {
+//
+//                check = true;
+//                Log.i("id**", "check = true");
+//            }
+//
+//            editor = sp.edit();
+//            editor.putString(FIRST_OBJECT, firstObject);
+//            editor.commit();
+//
+//
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
 
 
         return check;
@@ -133,25 +171,61 @@ public class ParseManager {
 
     public void readParse() {
 
+        String id = sp.getString(ConfigActivity.CURRENT_ID,"0");
+
+//        parseManager.mDatabase.child("Root/QuoteRow").or("id").limitToFirst(10).addListenerForSingleValueEvent(new ValueEventListener() {
+
+        parseManager.mDatabase.child("Root/QuoteRow/").addListenerForSingleValueEvent(new ValueEventListener() {
+                                                 @Override
+                                                 public void onDataChange(DataSnapshot snapshot) {
+                                                     Log.d("read","bla");
+                                                     String source="";
+                                                     String quote= "";
+                                                     String image_url="";
+                                                     long i = snapshot.getChildrenCount();
+
+////                                                     Object t =snapshot.getValue();
+//                                                     Map<String, Object> td = (HashMap<String,Object>) snapshot.getValue();
+//
+//
+//
+//
+//
+
+                                                     for (DataSnapshot child: snapshot.getChildren()) {
+
+
+                                                         try {
+                                                             source =  URLDecoder.decode((String)child.child(SOURCE_PARSE).getValue(),"UTF-8");
+                                                             quote = URLDecoder.decode((String)child.child(TEXT_PARSE).getValue(),"UTF-8");
+                                                             image_url = URLDecoder.decode((String)child.child(IMAGE_PARSE).getValue(),"UTF-8");
+                                                         } catch (UnsupportedEncodingException e) {
+                                                             e.printStackTrace();
+                                                         }
+
+//
+//                                                         String textP = parseObject.getString(TEXT_PARSE);
+//                                                         String sourceP = parseObject.getString(SOURCE_PARSE);
+//                                                         String linkP = parseObject.getString(LINK_PARSE);
+
+
+                                                         Log.d(LOG_TAG, "URI_QUOTE / " + URI_PATH);
+
+                                                         hashMap = new HashMap<>();
+                                                         hashMap.put(QuoteManager.TEXT_QUOTE, quote);
+                                                         hashMap.put(QuoteManager.SOURCE_QUOTE, source);
+                                                         hashMap.put(QuoteManager.URI_QUOTE, image_url);
+                                                         //hashMap.put(QuoteManager.LINK_QUOTE, linkP);
+
+//                                 Log.d(LOG_TAG, "EXT_QUOTE / " + textP);
+//                                 Log.d(LOG_TAG, "SOURCE_QUOTE / " + sourceP);
+
+                                                         arrayListQuots.add(hashMap);
+
+                                                     }
 
 
 
-         ParseQuery<ParseObject> query = ParseQuery.getQuery("Quotes");
-
-
-         query.findInBackground(
-                 new FindCallback<ParseObject>() {
-                     public void done(List<ParseObject> quoteList, ParseException e) {
-                         if (e == null) {
-                             Log.d("id**", "Retrieved " + quoteList.size() + " quote");
-                             for (ParseObject parseObject : quoteList) {
-
-
-                                 String textP = parseObject.getString(TEXT_PARSE);
-                                 String sourceP = parseObject.getString(SOURCE_PARSE);
-                                 String linkP = parseObject.getString(LINK_PARSE);
-
-                                 ParseFile imageP = parseObject.getParseFile(IMAGE_PARSE);
 
 //                                 try {
 //                                     URI_PATH = convertToBitmap(imageP);
@@ -160,33 +234,77 @@ public class ParseManager {
 //                                 }
 
 
-                                 Log.d(LOG_TAG, "URI_QUOTE / " + URI_PATH);
-
-                                 hashMap = new HashMap<>();
-                                 hashMap.put(QuoteManager.TEXT_QUOTE, textP);
-                                 hashMap.put(QuoteManager.SOURCE_QUOTE, sourceP);
-                                 hashMap.put(QuoteManager.URI_QUOTE, imageP.getUrl());
-                                 hashMap.put(QuoteManager.LINK_QUOTE, linkP);
-
-                                 Log.d(LOG_TAG, "EXT_QUOTE / " + textP);
-                                 Log.d(LOG_TAG, "SOURCE_QUOTE / " + sourceP);
-
-                                 arrayListQuots.add(hashMap);
 
 
-                             }
+
+
 
                              //  ParseObject.pinAllInBackground(quoteList);
 
                              Log.d(LOG_TAG, "PARSE download complite / ");
                              addToLocalDB();
 
-                         } else {
-                             Log.d("quote", "Error: " + e.getMessage());
-                         }
-                     }
-                 }
-         );
+
+                                                 }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+//         ParseQuery<ParseObject> query = ParseQuery.getQuery("Quotes");
+//
+//
+//         query.findInBackground(
+//                 new FindCallback<ParseObject>() {
+//                     public void done(List<ParseObject> quoteList, ParseException e) {
+//                         if (e == null) {
+//                             Log.d("id**", "Retrieved " + quoteList.size() + " quote");
+//                             for (ParseObject parseObject : quoteList) {
+//
+//
+//                                 String textP = parseObject.getString(TEXT_PARSE);
+//                                 String sourceP = parseObject.getString(SOURCE_PARSE);
+//                                 String linkP = parseObject.getString(LINK_PARSE);
+//
+//                                 ParseFile imageP = parseObject.getParseFile(IMAGE_PARSE);
+//
+////                                 try {
+////                                     URI_PATH = convertToBitmap(imageP);
+////                                 } catch (ParseException e1) {
+////                                     e1.printStackTrace();
+////                                 }
+//
+//
+//                                 Log.d(LOG_TAG, "URI_QUOTE / " + URI_PATH);
+//
+//                                 hashMap = new HashMap<>();
+//                                 hashMap.put(QuoteManager.TEXT_QUOTE, textP);
+//                                 hashMap.put(QuoteManager.SOURCE_QUOTE, sourceP);
+//                                 hashMap.put(QuoteManager.URI_QUOTE, imageP.getUrl());
+//                                 hashMap.put(QuoteManager.LINK_QUOTE, linkP);
+//
+//                                 Log.d(LOG_TAG, "EXT_QUOTE / " + textP);
+//                                 Log.d(LOG_TAG, "SOURCE_QUOTE / " + sourceP);
+//
+//                                 arrayListQuots.add(hashMap);
+//
+//
+//                             }
+//
+//                             //  ParseObject.pinAllInBackground(quoteList);
+//
+//                             Log.d(LOG_TAG, "PARSE download complite / ");
+//                             addToLocalDB();
+//
+//                         } else {
+//                             Log.d("quote", "Error: " + e.getMessage());
+//                         }
+//                     }
+//                 }
+//         );
 
     }
 
@@ -270,10 +388,10 @@ public class ParseManager {
             String textM = arrayListQuots.get(i).get(QuoteManager.TEXT_QUOTE);
             String sourceM = arrayListQuots.get(i).get(QuoteManager.SOURCE_QUOTE);
             String uriM = arrayListQuots.get(i).get(QuoteManager.URI_QUOTE);
-            String linkM = arrayListQuots.get(i).get(QuoteManager.LINK_QUOTE);
+//            String linkM = arrayListQuots.get(i).get(QuoteManager.LINK_QUOTE);
 
 
-            qrm.greatQuote(textM, sourceM, uriM, linkM);
+            qrm.greatQuote(textM, sourceM, uriM, "");
 
         }
 

@@ -28,21 +28,24 @@
 
 
 
-            <TextView
-                android:id="@+id/tvQuoteText"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textColor="#ffffffff"
-                android:layout_weight="1"
-                android:text="כוונת הבורא ית&apos; על הבריאה מעת שנבראה, הוא להודיע את אלוקותו לזולתו. כי דבר הודעת אלוקותו, מגיע לנברא במידת שפעו הנעים, ההולך ומתרבה אליו עד השיעור הרצוי. שבזאת מתרוממים השפלים בהכרה אמיתית, להיות למרכבה אליו ית&apos; ולדבקה בו, עד שמגיעים לשלמותם הסופית: עין לא ראתה אלוקים זולתך."
-                android:gravity="right|top"
-                android:singleLine="false"
-                android:layout_marginBottom="5dp"
-                android:padding="5dp"
-                android:textAlignment="gravity"
-                android:textIsSelectable="false">
+    <TextView
+        android:id="@+id/tvQuoteText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#ffffffff"
+        android:layout_weight="1"
+        android:text="כוונת הבורא ית&apos; על הבריאה מעת שנבראה, הוא להודיע את אלוקותו לזולתו. כי דבר הודעת אלוקותו, מגיע לנברא במידת שפעו הנעים, ההולך ומתרבה אליו עד השיעור הרצוי. שבזאת מתרוממים השפלים בהכרה אמיתית, להיות למרכבה אליו ית&apos; ולדבקה בו, עד שמגיעים לשלמותם הסופית: עין לא ראתה אלוקים זולתך."
+        android:gravity="right|top"
 
-            </TextView>
+        android:scrollbars = "vertical"
+
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:textAlignment="gravity"
+        android:textIsSelectable="true">
+
+    </TextView>
+
 
         </LinearLayout>
 

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/myshape.xml",
+        "source": "/Users/igal/Documents/AndroidKabQuotes/app/src/main/res/drawable-mdpi/myshape.xml"
+    },
+    {
+        "merged": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/mysimpleshape.xml",
+        "source": "/Users/igal/Documents/AndroidKabQuotes/app/src/main/res/drawable-mdpi/mysimpleshape.xml"
+    }
+]

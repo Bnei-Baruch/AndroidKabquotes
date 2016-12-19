@@ -1,0 +1,311 @@
+[
+    {
+        "outputFile": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 95,
+                    "endOffset": 196
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 95,
+                        "endOffset": 147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 201,
+                    "endColumn": 106,
+                    "endOffset": 303
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 152,
+                        "endColumn": 106,
+                        "endOffset": 254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 308,
+                    "endColumn": 122,
+                    "endOffset": 426
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 259,
+                        "endColumn": 122,
+                        "endOffset": 377
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 431,
+                    "endColumn": 94,
+                    "endOffset": 521
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 382,
+                        "endColumn": 94,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 526,
+                    "endColumn": 99,
+                    "endOffset": 621
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 477,
+                        "endColumn": 99,
+                        "endOffset": 572
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 626,
+                    "endColumn": 81,
+                    "endOffset": 703
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 577,
+                        "endColumn": 81,
+                        "endOffset": 654
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 708,
+                    "endColumn": 96,
+                    "endOffset": 800
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 659,
+                        "endColumn": 96,
+                        "endOffset": 751
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 805,
+                    "endColumn": 105,
+                    "endOffset": 906
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 756,
+                        "endColumn": 105,
+                        "endOffset": 857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 911,
+                    "endColumn": 95,
+                    "endOffset": 1002
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 862,
+                        "endColumn": 95,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1007,
+                    "endColumn": 95,
+                    "endOffset": 1098
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 95,
+                        "endOffset": 1049
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1103,
+                    "endColumn": 94,
+                    "endOffset": 1193
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1054,
+                        "endColumn": 94,
+                        "endOffset": 1144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1198,
+                    "endColumn": 96,
+                    "endOffset": 1290
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1149,
+                        "endColumn": 96,
+                        "endOffset": 1241
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1295,
+                    "endColumn": 94,
+                    "endOffset": 1385
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1246,
+                        "endColumn": 94,
+                        "endOffset": 1336
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1390,
+                    "endColumn": 97,
+                    "endOffset": 1483
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1341,
+                        "endColumn": 97,
+                        "endOffset": 1434
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1488,
+                    "endColumn": 111,
+                    "endOffset": 1595
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1439,
+                        "endColumn": 111,
+                        "endOffset": 1546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1600,
+                    "endColumn": 157,
+                    "endOffset": 1753
+                },
+                "from": {
+                    "file": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.0/res/values-zh-rCN/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 289,
+                        "endColumn": 157,
+                        "endOffset": 446
+                    }
+                }
+            }
+        ]
+    }
+]

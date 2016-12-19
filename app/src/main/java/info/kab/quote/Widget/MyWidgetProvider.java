@@ -15,7 +15,7 @@ import info.kab.quote.ParseLoader.ParseManager;
 public class MyWidgetProvider extends AppWidgetProvider {
 
 	private static final String LOG = "my**";
-    private ParseManager db;
+    private static ParseManager db;
 
 
     @Override

@@ -69,7 +69,7 @@ public class UpdateWidgetService extends Service {
 			Log.w("WidgetExample", String.valueOf(number));
 			// Set the text
 			remoteViews.setTextViewText(R.id.tvQuoteText, "Random 2 : " + String.valueOf(number));
-
+            
 
             remoteViews.setTextViewText(R.id.tvQuoteText, quoteText);
             remoteViews.setTextViewText(R.id.tvQuoteSource, quoteSource);

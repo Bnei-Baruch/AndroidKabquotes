@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "673204257655",
+    "firebase_url": "https://kabbalist-quote.firebaseio.com",
+    "project_id": "kabbalist-quote",
+    "storage_bucket": "kabbalist-quote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673204257655:android:bd4da10850763307",
+        "android_client_info": {
+          "package_name": "info.kab.quote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673204257655-hbmtvd6vtojidb4qke4tgr9bmigq3iap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp8cvdfKazaR6kRHmNPYQ4MIKlA41FE6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
