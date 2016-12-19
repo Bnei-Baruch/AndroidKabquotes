@@ -1,4 +1,4 @@
-#Mon Dec 19 22:09:19 IST 2016
+#Tue Dec 20 00:02:26 IST 2016
 base.0=/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9251de59f041f19323ce1c5e4899e481cafc03f8
 renamed.1=classes2.dex
 renamed.0=classes.dex

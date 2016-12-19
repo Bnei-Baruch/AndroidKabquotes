@@ -19,15 +19,15 @@ public class LinkActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_link);
 
-        SharedPreferences sp = getApplicationContext().getSharedPreferences(ConfigActivity.WIDGET_PREF, Context.MODE_PRIVATE);
-        String link = sp.getString(QuoteManager.LINK_QUOTE, QuoteManager.link);
-
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.addCategory(Intent.CATEGORY_BROWSABLE);
-        i.setData(Uri.parse(link));
-        startActivity(i);
-
-        finish();
+//        SharedPreferences sp = getApplicationContext().getSharedPreferences(ConfigActivity.WIDGET_PREF, Context.MODE_PRIVATE);
+//        String link = sp.getString(QuoteManager.LINK_QUOTE, QuoteManager.link);
+//
+//        Intent i = new Intent(Intent.ACTION_VIEW);
+//        i.addCategory(Intent.CATEGORY_BROWSABLE);
+//        i.setData(Uri.parse(link));
+//        startActivity(i);
+//
+//        finish();
     }
 
 

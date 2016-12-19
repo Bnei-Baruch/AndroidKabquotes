@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="info.kab.android.widget.quote"
     android:installLocation="internalOnly"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="3"
+    android:versionName="1.2" >
 
     <uses-sdk android:minSdkVersion="11" />
 
@@ -36,14 +36,21 @@
         <activity android:name="info.kab.quote.Widget.ConfigActivity">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="info.kab.quote.Widget.LinkActivity"
-            android:label="@string/title_activity_link"/>
+            android:label="@string/title_activity_link">
+            <intent-filter>
+
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
 
         <service android:name="info.kab.quote.Widget.UpdateWidgetService" >
         </service>

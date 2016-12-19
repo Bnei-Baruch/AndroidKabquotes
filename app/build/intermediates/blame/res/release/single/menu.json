@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/res/merged/release/menu/menu_goog.xml",
+        "source": "/Users/igal/Documents/AndroidKabQuotes/app/src/main/res/menu/menu_goog.xml"
+    },
+    {
+        "merged": "/Users/igal/Documents/AndroidKabQuotes/app/build/intermediates/res/merged/release/menu/menu_link.xml",
+        "source": "/Users/igal/Documents/AndroidKabQuotes/app/src/main/res/menu/menu_link.xml"
+    }
+]

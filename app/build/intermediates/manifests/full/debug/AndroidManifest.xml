@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="info.kab.quote"
     android:installLocation="internalOnly"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="0.01" >
 
     <uses-sdk
@@ -42,14 +42,17 @@
         <activity android:name="info.kab.quote.Widget.ConfigActivity" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.kab.quote.Widget.LinkActivity"
+            android:label="@string/title_activity_link" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="info.kab.quote.Widget.LinkActivity"
-            android:label="@string/title_activity_link" />
 
         <service android:name="info.kab.quote.Widget.UpdateWidgetService" >
         </service>

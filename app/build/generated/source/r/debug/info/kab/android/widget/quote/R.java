@@ -1472,8 +1472,6 @@ containing a value of this type.
         public static final int widget_text=0x7f060023;
     }
     public static final class style {
-        /**  Customize your theme here. 
-         */
         public static final int AppTheme=0x7f0a0063;
         public static final int Base_TextAppearance_AppCompat=0x7f0a0025;
         public static final int Base_TextAppearance_AppCompat_Body1=0x7f0a0026;
