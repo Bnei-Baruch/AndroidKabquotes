@@ -10,27 +10,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.IBinder;
 import android.util.Log;
-import android.widget.ImageView;
 import android.widget.RemoteViews;
 
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.charset.MalformedInputException;
-
-
-import com.parse.ParseFile;
 
 
 import info.kab.android.widget.quote.R;
 import info.kab.quote.LocalDB.QuoteManager;
-import info.kab.quote.ParseLoader.ParseManager;
 
 public class UpdateWidgetService extends Service {
 	public static final String LOG = "my**";
@@ -40,7 +29,7 @@ public class UpdateWidgetService extends Service {
 	public void onStart(Intent intent, int startId) {
 		Log.i(LOG, "Called");
 		// Create some random data
-        QuoteManager quoteManager = QuoteManager.greatInstance(this);
+        QuoteManager quoteManager = QuoteManager.creatInstance(this);
         SharedPreferences sp = this.getSharedPreferences(ConfigActivity.WIDGET_PREF, Context.MODE_PRIVATE);
 		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this.getApplicationContext());
 

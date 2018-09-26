@@ -1,33 +1,54 @@
 package info.kab.quote.Widget;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import info.kab.android.widget.quote.R;
 import info.kab.quote.LocalDB.QuoteManager;
 
 
 public class LinkActivity extends Activity {
 
+    private TextView quote;
+    private ImageView image;
+    private TextView source;
+    private QuoteManager quoteManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_link);
+        setContentView(R.layout.widget_bb_black);
 
-//        SharedPreferences sp = getApplicationContext().getSharedPreferences(ConfigActivity.WIDGET_PREF, Context.MODE_PRIVATE);
-//        String link = sp.getString(QuoteManager.LINK_QUOTE, QuoteManager.link);
-//
-//        Intent i = new Intent(Intent.ACTION_VIEW);
-//        i.addCategory(Intent.CATEGORY_BROWSABLE);
-//        i.setData(Uri.parse(link));
-//        startActivity(i);
-//
-//        finish();
+        quote = (TextView)findViewById(R.id.tvQuoteText);
+        image = (ImageView)findViewById(R.id.iconBitmap);
+        source = findViewById(R.id.tvQuoteSource);
+
+        quoteManager = QuoteManager.creatInstance(this);
+
+        quote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quote.setText(quoteManager.readQuote(counter(PreferenceManager.getDefaultSharedPreferences(LinkActivity.this),quoteManager)).get(QuoteManager.TEXT_QUOTE).toString());
+                source.setText(quoteManager.readQuote(counter(PreferenceManager.getDefaultSharedPreferences(LinkActivity.this),quoteManager)).get(QuoteManager.SOURCE_QUOTE).toString());
+
+            }
+        });
+
+        findViewById(R.id.main).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quote.setText(quoteManager.readQuote(counter(PreferenceManager.getDefaultSharedPreferences(LinkActivity.this),quoteManager)).get(QuoteManager.TEXT_QUOTE).toString());
+                source.setText(quoteManager.readQuote(counter(PreferenceManager.getDefaultSharedPreferences(LinkActivity.this),quoteManager)).get(QuoteManager.SOURCE_QUOTE).toString());
+
+            }
+        });
     }
 
 
@@ -52,4 +73,33 @@ public class LinkActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        quote.setText(quoteManager.readQuote(counter(PreferenceManager.getDefaultSharedPreferences(this),quoteManager)).get(QuoteManager.TEXT_QUOTE).toString());
+        source.setText(quoteManager.readQuote(counter(PreferenceManager.getDefaultSharedPreferences(this),quoteManager)).get(QuoteManager.SOURCE_QUOTE).toString());
+
+
+    }
+
+    public int counter(SharedPreferences sp, QuoteManager qmr){
+
+        int cnt = sp.getInt(ConfigActivity.WIDGET_COUNT, 0);
+
+        if (cnt < qmr.size() - 1) {
+            cnt++;
+        } else {
+            cnt = 0;
+        }
+
+        SharedPreferences.Editor editor = sp.edit();
+        editor = sp.edit();
+        editor.putInt(ConfigActivity.WIDGET_COUNT, cnt);
+        editor.commit();
+
+        return cnt;
+    }
+
 }

@@ -1,6 +1,5 @@
 package info.kab.quote.ParseLoader;
 
-import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -10,22 +9,15 @@ import android.os.Environment;
 import android.text.format.Time;
 import android.util.Log;
 
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.parse.FindCallback;
 import com.parse.GetCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
-import com.parse.ParseQuery;
-
-import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -34,14 +26,9 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import info.kab.quote.LocalDB.QuoteManager;
-import info.kab.quote.LocalDB.QuoteRecords;
 import info.kab.quote.Widget.ConfigActivity;
-
-import static java.lang.System.in;
 
 /**
  * Created by admin on 4/4/15.
@@ -381,7 +368,7 @@ public class ParseManager {
 
 
     public void addToLocalDB() {
-        QuoteManager qrm = QuoteManager.greatInstance(context);
+        QuoteManager qrm = QuoteManager.creatInstance(context);
         qrm.deleteAll();
 
         for (int i = 0; i < arrayListQuots.size(); i++) {

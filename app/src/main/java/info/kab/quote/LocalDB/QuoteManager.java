@@ -72,7 +72,7 @@ public class QuoteManager {
         readAllQuote();
     }
 
-    public static QuoteManager greatInstance(Context context) {
+    public static QuoteManager creatInstance(Context context) {
         if (instance == null) {
             instance = new QuoteManager(context);
 

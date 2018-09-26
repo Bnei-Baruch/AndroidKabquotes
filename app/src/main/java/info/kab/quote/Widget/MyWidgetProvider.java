@@ -66,7 +66,7 @@ public class MyWidgetProvider extends AppWidgetProvider {
         db = ParseManager.getInstance(context);
         db.updateFromParse();
 
-        QuoteManager.greatInstance(context);
+        QuoteManager.creatInstance(context);
        // parseDownload(context);
 
 

@@ -6,14 +6,12 @@ package info.kab.quote.Widget;
 
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RemoteViews;
 import android.widget.TextView;
 import info.kab.android.widget.quote.R;
 import info.kab.quote.LocalDB.QuoteManager;
@@ -41,7 +39,7 @@ public class ConfigActivity extends Activity  {
 
 
 
-        quoteManager = QuoteManager.greatInstance(this);
+        quoteManager = QuoteManager.creatInstance(this);
         myWidget = new MyWidgetProvider();
         // извлекаем ID конфигурируемого виджета
         Intent intent = getIntent();
