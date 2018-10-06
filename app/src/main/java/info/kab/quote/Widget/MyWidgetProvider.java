@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.util.Log;
 
 import info.kab.quote.LocalDB.QuoteManager;
@@ -32,8 +33,22 @@ public class MyWidgetProvider extends AppWidgetProvider {
 		Intent intent = new Intent(context.getApplicationContext(),	UpdateWidgetService.class);
 		intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, allWidgetIds);
 
-		// Update the widgets via the service
-		context.startService(intent);
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//            context.startForegroundService(intent);
+//        } else {
+//            context.startService(intent);
+//        }
+//		// Update the widgets via the service
+//		context.startService(intent);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(intent);
+        } else {
+            context.startService(intent);
+        }
+
+      //  UpdateWidgetService.enqueueWork(context,intent);
 	}
 
     @Override
